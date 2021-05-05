@@ -27,14 +27,14 @@ function App() {
       <section className = "slider_container">
         <div className = "current-time">00:00</div>
         <input type="range" min="1" max = "100"
-        value = "0" className="seek-slider"/>
+        value = "0" className="seek_slider"/>
         <div className = "total-duration">00:00</div>
       </section>
-      <section class="slider_container">
-        <i class="fa fa-volume-down"></i>
+      <section className="slider_container">
+        <i className="fa fa-volume-down"></i>
         <input type="range" min="1" max="100"
-          value="99" class="volume_slider"/>
-        <i class="fa fa-volume-up"></i>
+          value="99" className="volume_slider"/>
+        <i className="fa fa-volume-up"></i>
       </section>
   </div>
   );
