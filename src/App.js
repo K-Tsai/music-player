@@ -1,5 +1,11 @@
+import React from 'react';
 import './App.css';
 import igor from './pictures/igor.jpg'
+
+let track_index = 0;
+let isPlaying = false;
+let updateTimer;
+let curr_track = React.createElement('div', {className: 'audio'},'audio')
 
 class App extends React.Component {
   constructor(props){
@@ -7,6 +13,13 @@ class App extends React.Component {
     this.state= {
 
     }
+
+    loadTrack = (track_index) =>{
+      clearInterval(updateTimer);
+      resetValues();
+    }
+
+
   }
   render() {
     return (
